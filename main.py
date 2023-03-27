@@ -13,7 +13,7 @@ option = st.sidebar.selectbox(
     index=0)
 
 
-datos = pd.read_csv(r"data\red_recarga_acceso_publico_2021.csv", sep=";")
+datos = pd.read_csv("data/red_recarga_acceso_publico_2021.csv", sep=";")
 uploaded_file = st.sidebar.file_uploader("Elige el csv", type=["csv"])
 if uploaded_file is not None:
     datos = pd.read_csv(uploaded_file)
